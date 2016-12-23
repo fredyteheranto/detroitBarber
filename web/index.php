@@ -7,9 +7,16 @@
 </head>
 <body>
 
-
-
 <div  class="container">
+<div class="spa">
+	
+<div class="dash" >
+	<!-- <link rel="import" href="vista/dash_view.html"> -->
+	sss
+</div>
+<div class="login">
+	
+
 	<form name="frmlogin" method="POST" id="frmlogin">
   <div class="form-group">
     <label for="Usuario">Usuario</label>
@@ -29,13 +36,18 @@
   <button type="button" class="btn btn-default enviar">Enviar</button>
 </form>
 </div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</div>
+</div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
 <script src="vista/estaticos/js/tether.min.js"></script>
 
 <script src="vista/estaticos/js/bootstrap.min.js"></script>
-<script src="vista/estaticos/js/app.js"></script>
+
+ <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+      
+        <script src="vista/estaticos/js/jquery.loadTemplate.min.js"></script>
+        <script src="vista/estaticos/js/app.js"></script>
 
 </body>
 </html>

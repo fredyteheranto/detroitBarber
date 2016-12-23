@@ -1,7 +1,6 @@
 	var UserL = $("#usuario");
 	var Pass = $("#contrasena");
 		
-
 	function LoginUser() {
 		// validar
 		var validar = false;
@@ -24,13 +23,19 @@
 				cache:'false',
 				success:function(data){
 					if (data==1) {
-						alert('listo');
+						//alert('listo');
+						$('.login').remove();
+					$.ajax({
+					  url: "vista/home.php"
+					}).done(function(data) { // data what is sent back by the php page
+					  $('.dash').html(data); // display data
+					});
 					}else{
-						alert('malo');
+						console.log('malo');
 					}
 					
 				}
-			})
+			});
 		}
 	}
 

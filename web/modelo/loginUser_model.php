@@ -14,7 +14,8 @@ $row = mysqli_fetch_array($result);
 //echo $result;
  if ($num_row == 1){
    echo  "1";
-   $_SESSION['login_user']=$row['usuario'];
+   $_SESSION['login_user']=$row['id'];
+   //include '../vista/home.php';
 }else{
      echo '2';
    // echo $result;
