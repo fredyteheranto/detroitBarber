@@ -1,2 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="vista/estaticos/css/bootstrap.min.css" >
 
-enao
+	<title>app</title>
+</head>
+<body>
+
+
+
+<div  class="container">
+	<form name="frmlogin" method="POST" id="frmlogin">
+  <div class="form-group">
+    <label for="Usuario">Usuario</label>
+    <input type="text" class="form-control user" id="usuario" placeholder="user" required name="user">
+  </div>
+  <div class="form-group">
+    <label for="Contrasena">Contrasena</label>
+    <input type="password" class="form-control pass" id="contrasena" placeholder="Contraseña" required name="pass">
+  </div>
+<!-- 
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Guardar datos
+    </label>
+  </div> -->
+ <!-- <a href="#" class="btn btn-default enviar">Enviar</a> -->
+  <button type="button" class="btn btn-default enviar">Enviar</button>
+</form>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="vista/estaticos/js/tether.min.js"></script>
+
+<script src="vista/estaticos/js/bootstrap.min.js"></script>
+<script src="vista/estaticos/js/app.js"></script>
+
+</body>
+</html>
