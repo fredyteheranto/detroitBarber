@@ -68,9 +68,7 @@ $(".enviarRegistrp").on('click',function(){
 });
 
 
-
-// rutas//
-
+// rutas
 $(".registro").on('click',function(){ 
 //	e.preventDefaul();
 $('.login').remove();
