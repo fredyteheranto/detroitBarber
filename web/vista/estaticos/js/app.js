@@ -26,7 +26,7 @@
 						//alert('listo');
 						$('.login').remove();
 					$.ajax({
-					  url: "vista/home.php"
+					  url: "vista/php/home.php"
 					}).done(function(data) { // data what is sent back by the php page
 					  $('.dash').html(data); // display data
 					});
@@ -39,12 +39,47 @@
 		}
 	}
 
+function registro() {
+	// registro
+	var Form = $("#frmregistro").serialize();
+			//Form
+			$.ajax({
+				method:'post',
+				url:'modelo/register_model.php',
+				data:Form,
+				cache:'false',
+				success:function(data){
+					if (data==1) {
+					
+					}else{
+						console.log('malo');
+					}
+					
+				}
+			});
+}
 
-
-
+/// enviar formularios
 $(".enviar").on('click',function(){ 
-//	e.preventDefaul();
 	 LoginUser();
 });
+$(".enviarRegistrp").on('click',function(){ 
+	 registro();
+});
+
+
+
+// rutas//
+
+$(".registro").on('click',function(){ 
+//	e.preventDefaul();
+$('.login').remove();
+	 	$.ajax({
+					  url: "vista/registro.html"
+					}).done(function(data) { // data what is sent back by the php page
+					  $('.dash').html(data); // display data
+					});
+});
+
 
 
