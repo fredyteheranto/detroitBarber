@@ -1,15 +1,22 @@
 <form name="frmregistro" method="POST" id="frmregistro">
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    <label for="nombre">Nombre:</label>
+    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required name="nombre">
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    <label for="papellido">Apellidos:</label>
+    <div class="row">
+        <div class="col-sm-6 col-md-12">
+            <input type="text" class="form-control" id="papellido" placeholder="Primero" name="papellido" required>
+        </div>
+        <div class="col-sm-6 col-md-12">
+            <input type="email" class="form-control" id="sapellido" name="sapellido" placeholder="Segundo" required>
+        </div>
+    </div>
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+       <label for="fecha">Fecha de nacimiento:</label>
+       <input type="date" id="fecha" class="form-control">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
